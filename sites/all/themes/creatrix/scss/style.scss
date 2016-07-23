@@ -411,13 +411,45 @@
 #section-showcase{}
 // =========== end showcase ============
 
-// =========== banner ============
+// =========== content ============
 #section-content{
     padding: $mainPadding 0;
 }
-// =========== end banner ============
+// =========== end content ============
 
 // =========== banner ============
+#section-breadcrumb{
+    background: #eee;
+    color: #878787;
+    .breadcrumb{
+        margin: 0;
+        padding: 15px;
+        background: none;
+        a{
+            color: #878787;
+            &:hover{
+                color: #878787;
+            }
+        }
+        .divider{
+            display: inline-block;
+            font-size: 0;
+            line-height: normal;
+            padding: 0 10px;
+            &:before{
+                content: "\f105";
+                font-family: 'FontAwesome';
+                font-size: 13px;
+                color: #878787;
+            }
+
+        }
+    }
+}
+// =========== banner ============
+
+// =========== banner  - gbux============
+/*
 #section-breadcrumb{
     background: $color_main;
     color: #fff;
@@ -446,6 +478,7 @@
         }
     }
 }
+*/
 // =========== end banner ============
 
 // =========== team ============
@@ -1055,4 +1088,26 @@
     margin-bottom: 20px;
 }
 
+// EBD - float image
 
+.imagetext-float.left {
+    float:left;
+    margin: 0 1em .5em 0px;
+}
+
+.imagetext-float.right {
+    float:right;
+    margin: 0 0 .5em 1em;
+}
+
+.quote {
+    border-bottom: 5px solid #9fc338;
+    border-top: 5px solid #9fc338;
+    font-size: 22px;
+    font-style:  italic;
+}
+
+.quote .author {
+    display: block;
+    text-align: right;
+}

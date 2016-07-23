@@ -55,7 +55,6 @@ function creatrix_preprocess_block(&$vars) {
 		if($vars['theme_hook_suggestions'][3] == 'block__superhero') {
 			unset($vars['theme_hook_suggestions'][3]);
 		}
-		//dpm($vars);
 	}
 	
 }
@@ -73,6 +72,7 @@ function creatrix_preprocess_region(&$variables) {
    	}
 
    	//  Modify order stack up on mobile for blocks Homepage
+    /*
     if ($variables["is_front"]) {
     	$region = $variables['region'];	
     	if(in_array($region, array('feature_first'))) {
@@ -81,9 +81,8 @@ function creatrix_preprocess_region(&$variables) {
 	 	if(in_array($region, array('feature_second'))) {
 	  		$variables['classes_array'][] = 'col-sm-push-5';
 	 	}
-
     }  
-
+*/
    	
    	/* Removed 03-20 JV
   	if (isset($nid) && ($nid == 3)) :

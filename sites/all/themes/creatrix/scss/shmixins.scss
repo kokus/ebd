@@ -478,7 +478,7 @@ b, strong {
 }
 
 // fa-checkbox
-.fa-check-circle {
+.fa-check-circle, .fa-check-square-o {
    color: $color_main;
 }
 
@@ -492,5 +492,15 @@ b, strong {
     li span {
         color: $white;
     }
+}
+
+.green-square-check ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.block-block ul {
+    padding-left:0px;
 }
 
