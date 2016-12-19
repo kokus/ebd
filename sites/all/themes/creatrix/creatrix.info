@@ -93,6 +93,7 @@ scss[] = bonus.scss
 scss[] = pages.scss
 scss[] = responsive.scss
 scss[] = portfolio.scss
+scss[] = ebd.scss
 
 ; Scripts
 scripts[] = js/modernizr.js

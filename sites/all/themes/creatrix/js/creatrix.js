@@ -36,4 +36,38 @@ jQuery(document).ready(function($){
 		}).get());
 		$(this).find(">.col-lg-4").height(maxHeight-3);
 	});
+
+	// EBD - Home - Areas of Expertise panel - Added JV 12/19
+    $('.callOut01').show();
+	$('.callOut02').hide();
+	$('.callOut03').hide();
+
+	$('#01_arrow').show();
+	$('#02_arrow').hide();
+	$('#03_arrow').hide();
+
+	$(".iconEnterprise").hover(function(){
+		$('.callOut01').show(); $('.callOut02').hide(); $('.callOut03').hide();
+		$('#01_arrow').show(); $('#02_arrow').hide(); $('#03_arrow').hide();
+		$(".iconEnterprise").addClass("in"); $(".iconExperience").removeClass("in"); $(".iconProduct").removeClass("in");
+	},function(){
+		//$('.callOut03').hide();
+	});
+
+	$(".iconExperience").hover(function(){
+		$('.callOut01').hide(); $('.callOut02').show(); $('.callOut03').hide();
+		$('#01_arrow').hide(); $('#02_arrow').show(); $('#03_arrow').hide();
+		$(".iconEnterprise").removeClass("in"); $(".iconExperience").addClass("in"); $(".iconProduct").removeClass("in");
+	},function(){
+		//$('.callOut03').hide();
+	});
+
+	$(".iconProduct").hover(function(){
+		$('.callOut01').hide(); $('.callOut02').hide(); $('.callOut03').show();
+		$('#01_arrow').hide(); $('#02_arrow').hide(); $('#03_arrow').show();
+		$(".iconEnterprise").removeClass("in"); $(".iconExperience").removeClass("in"); $(".iconProduct").addClass("in");
+	},function(){
+		//$('.callOut03').hide();
+	});
+
 })
