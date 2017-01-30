@@ -39,6 +39,7 @@ jQuery(document).ready(function($){
 
 	// EBD - Home - Areas of Expertise panel - Added JV 12/19
     $('.callOut01').show();
+	$("#enterpriseLabel").addClass("bold");
 	$('.callOut02').hide();
 	$('.callOut03').hide();
 
@@ -49,25 +50,41 @@ jQuery(document).ready(function($){
 	$(".iconEnterprise").hover(function(){
 		$('.callOut01').show(); $('.callOut02').hide(); $('.callOut03').hide();
 		$('#01_arrow').show(); $('#02_arrow').hide(); $('#03_arrow').hide();
+		$("#enterpriseLabel").addClass("bold");
+		$("#experienceLabel").removeClass("bold");$("#productLabel").removeClass("bold");
 		$(".iconEnterprise").addClass("in"); $(".iconExperience").removeClass("in"); $(".iconProduct").removeClass("in");
 	},function(){
 		//$('.callOut03').hide();
+		$(".iconEnterprise").removeClass("in");
+		$("#enterpriseLabel").removeClass("bold");
+		$('#01_arrow').hide();
+		$('.callOut01').fadeOut();
 	});
 
 	$(".iconExperience").hover(function(){
 		$('.callOut01').hide(); $('.callOut02').show(); $('.callOut03').hide();
 		$('#01_arrow').hide(); $('#02_arrow').show(); $('#03_arrow').hide();
+		$("#experienceLabel").addClass("bold");
+		$("#enterpriseLabel").removeClass("bold");$("#productLabel").removeClass("bold");
 		$(".iconEnterprise").removeClass("in"); $(".iconExperience").addClass("in"); $(".iconProduct").removeClass("in");
 	},function(){
-		//$('.callOut03').hide();
+		$(".iconExperience").removeClass("in");
+		$("#experienceLabel").removeClass("bold");
+		$('#02_arrow').hide();
+		$('.callOut02').fadeOut();
 	});
 
 	$(".iconProduct").hover(function(){
 		$('.callOut01').hide(); $('.callOut02').hide(); $('.callOut03').show();
 		$('#01_arrow').hide(); $('#02_arrow').hide(); $('#03_arrow').show();
+		$("#productLabel").addClass("bold");
+		$("#enterpriseLabel").removeClass("bold");$("#experienceLabel").removeClass("bold");
 		$(".iconEnterprise").removeClass("in"); $(".iconExperience").removeClass("in"); $(".iconProduct").addClass("in");
 	},function(){
-		//$('.callOut03').hide();
+		$(".iconProduct").removeClass("in");
+		$("#productLabel").removeClass("bold");
+		$('#03_arrow').hide();
+		$('.callOut03').fadeOut();
 	});
 
 })
