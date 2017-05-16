@@ -87,4 +87,10 @@ jQuery(document).ready(function($){
 		$('.callOut03').fadeOut();
 	});
 
+	// EBD - How we work  - Our Process panel - Added JV 05/15
+	$("ul.process_how > li:even").hover(function(){
+		$(this).toggleClass('selected').siblings().removeClass('selected');
+	});
+
+
 })
