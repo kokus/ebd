@@ -91,6 +91,8 @@ jQuery(document).ready(function($){
 	$("ul.process_how > li:even").hover(function(){
 		$(this).toggleClass('selected').siblings().removeClass('selected');
 	});
-
+	$("ul.process_how_main > li:even").hover(function(){
+		$(this).toggleClass('selected').siblings().removeClass('selected');
+	});
 
 })
