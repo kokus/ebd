@@ -95,4 +95,13 @@ jQuery(document).ready(function($){
 		$(this).toggleClass('selected').siblings().removeClass('selected');
 	});
 
+	// EBD - Process Detail - Our Process panel - Added JV 05/15
+	$(".bx-wrapper .slide").mouseenter(function () {
+    	$(this).toggleClass('selected').siblings().removeClass('selected');
+	})
+
+	$(".bx-wrapper .slide").mouseleave(function () {
+	   $(this).toggleClass('selected').siblings().removeClass('selected');
+	});
+
 })
