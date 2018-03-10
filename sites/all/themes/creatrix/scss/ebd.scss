@@ -1,31 +1,122 @@
 // =========== Home  Page -- Areas of expertise panel============
 
-	.boxDark {background:#333; border:3px solid #a0c237; padding:40px 20px;}
+.boxDark {background:#333; border:3px solid #a0c237; padding:40px 20px;}
 
-	#section-topls {color: #cccccc;}
-	#section-topls .mobile-areas-expertise {padding:20px;}
-	#section-topls .iconLabel {font-size:1.9rem; line-height:1.5em;  margin-bottom:20px; color:#fff;}
-	#section-clients h3, #section-topls h3 {font-family:'Open Sans'; margin:50px 0 20px 0; color:#fff;}
-	#section-clients .iconLabel {color:#fff; font-size:1.9rem; line-height:1.5em;}
-	#section-clients .callOutText {font-size:1.5rem; background-color:rgba(0, 0, 0, 0.3); color:#fff; padding:40px 50px; margin:50px 0 0 0;}
-	#section-clients .arrow-up {position:absolute; top:296px; left:46%;}
+#section-topls {color: #cccccc;}
+#section-topls .mobile-areas-expertise {padding:20px;}
+#section-topls .iconLabel {font-size:1.9rem; line-height:1.5em;  margin-bottom:20px; color:#fff;}
+#section-clients h3, #section-topls h3 {font-family:'Open Sans'; margin:50px 0 20px 0; color:#fff;}
+#section-clients .iconLabel {color:#fff; font-size:1.9rem; line-height:1.5em;}
+#section-clients .callOutText {font-size:1.5rem; background-color:rgba(0, 0, 0, 0.3); color:#fff; padding:40px 50px; margin:50px 0 0 0;}
+#section-clients .arrow-up {position:absolute; top:296px; left:46%;}
 
-	#section-clients .iconEnterprise {width:175px; height:175px; margin:0 auto; background:url('../../files/icon_enterprise.png') center center no-repeat;}
-	#section-topls .iconEnterprise {width:100%; height:175px; background:url('../../files/icon_enterprise-gray.png') center center no-repeat;}
-	#section-clients .iconEnterprise:hover,  #section-clients .iconEnterprise.in{background:url('../../files/icon_enterprise-on.png') center center no-repeat; cursor:pointer;}
+#section-clients .iconEnterprise {width:175px; height:175px; margin:0 auto; background:url('../../files/icon_enterprise.png') center center no-repeat;}
+#section-topls .iconEnterprise {width:100%; height:175px; background:url('../../files/icon_enterprise-gray.png') center center no-repeat;}
+#section-clients .iconEnterprise:hover,  #section-clients .iconEnterprise.in{background:url('../../files/icon_enterprise-on.png') center center no-repeat; cursor:pointer;}
 
-	#section-clients .iconExperience {width:175px; height:175px; margin:0 auto; background:url('../../files/icon_experience.png') center center no-repeat;}
-	#section-topls .iconExperience {width:100%; height:175px; background:url('../../files/icon_experience-gray.png') center center no-repeat;}
-	#section-clients .iconExperience:hover, #section-clients .iconExperience.in {background:url('../../files/icon_experience-on.png') center center no-repeat; cursor:pointer;}
+#section-clients .iconExperience {width:175px; height:175px; margin:0 auto; background:url('../../files/icon_experience.png') center center no-repeat;}
+#section-topls .iconExperience {width:100%; height:175px; background:url('../../files/icon_experience-gray.png') center center no-repeat;}
+#section-clients .iconExperience:hover, #section-clients .iconExperience.in {background:url('../../files/icon_experience-on.png') center center no-repeat; cursor:pointer;}
 
-	#section-clients .iconProduct {width:175px; height:175px; margin:0 auto; background:url('../../files/icon_product.png') center center no-repeat;}
-	#section-topls .iconProduct {width:100%; height:175px; background:url('../../files/icon_product-gray.png') center center no-repeat;}
-	#section-clients .iconProduct:hover, #section-clients .iconProduct.in {background:url('../../files/icon_product-on.png') center center no-repeat; cursor:pointer;}
+#section-clients .iconProduct {width:175px; height:175px; margin:0 auto; background:url('../../files/icon_product.png') center center no-repeat;}
+#section-topls .iconProduct {width:100%; height:175px; background:url('../../files/icon_product-gray.png') center center no-repeat;}
+#section-clients .iconProduct:hover, #section-clients .iconProduct.in {background:url('../../files/icon_product-on.png') center center no-repeat; cursor:pointer;}
 
 
-	.arrow-up {width:0; height:0;  border-left:15px solid transparent; border-right:15px solid transparent; border-bottom:15px solid rgba(0, 0, 0, 0.3);}
-	.center {text-align:center;}
+.arrow-up {width:0; height:0;  border-left:15px solid transparent; border-right:15px solid transparent; border-bottom:15px solid rgba(0, 0, 0, 0.3);}
+.center {text-align:center;}
 
-	@media (min-width: 768px) {
-		.sm-marginTop30 {margin-top:30px;}
-	}
+@media (min-width: 768px) {
+	.sm-marginTop30 {margin-top:30px;}
+}
+
+
+/* bxslider carousel */
+.bx-wrapper img {
+    margin: 0 auto;
+}
+
+
+/***********How We work process*************/
+
+ul.process_how {display:table; margin:0; white-space: nowrap; width:100%;}
+ul.process_how li {display:table-cell; vertical-align:middle; margin:0 20px; font-size:20px; text-align:center; font-family: 'Open Sans', sans-serif; font-weight:400; color:#333;}
+ul.process_how li img {display:block; padding:20px; margin:20px auto;border:2px solid #fff; border-radius:50%;}
+ul.process_how li.selected img {border:2px solid #84bd32; border-radius:50%;}
+
+ul.process_how_main {display:table; margin:0; white-space: nowrap; width:100%;}
+ul.process_how_main li {display:table-cell; vertical-align:middle; margin:0 20px; font-size:20px; text-align:center; font-family: 'Open Sans', sans-serif; font-weight:400; color:#333;}
+ul.process_how_main li img {display:block; padding:20px; margin:20px auto;border:2px solid transparent; border-radius:50%;}
+ul.process_how_main li.selected img {border:2px solid #84bd32; border-radius:50%;}
+
+/***********End - How We work process*************/
+
+/***********Case Studies Carousel*************/
+
+.bx-wrapper .selected img {border:2px solid #84bd32}
+
+/***********End - Case Studies Carousel*************/
+
+/***********Case Studies Node Panel*************/
+.field-name-field-panel-text .field-item {
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 23px;
+	font-family: Verdana;
+	color: #000;
+	text-align: center;
+	margin: 15px;
+}
+
+
+.field-name-field-panel-text {
+	background: #f5f5f5;
+	line-height: 42px;
+	height: 100px;
+}
+/***********ENd - Case Studies Node Panel*************/
+
+/* reduce bottom margin carousel case studies */
+.node-type-case-studies section#section-team {
+    padding: 20px 0;
+}
+
+/* remove accordion on responsive vertical view of process */
+.view-process .panel-group {
+    display: none;
+}
+
+/* rotate arrow on responsive vertical view of process */
+.view-process .views-row {
+    padding-top: 40px;
+}
+
+.rotate_arrow img {
+    transform: rotate(90deg);
+    display: block;
+    margin: 0 auto;
+}
+
+.views-row-last .views-field-nothing {
+    display: none;
+}
+
+/* Flippy Next and Previous links */
+
+li.prev { 
+ float: left;
+}
+
+li.next {
+ float: right;
+}
+
+/* What we do check boxes */
+
+.green_check_box {
+    margin-bottom: 18px;
+}
+
+
+
